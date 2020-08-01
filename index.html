@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PORTFOLIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel ="stylesheet" type="text/css" href="css/style.css"> 
+  
+</head>
+<body onload="loading()">
+<!--
+<div id="loader-bg">
+      <div class="loader">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+   </div>-->
+<!-----------------------------------header container ------------------------------------------------->
+
+<div class="svg-container" id="svg-container"> 
+  <!-- I crated SVG with: https://codepen.io/anthonydugois/pen/mewdyZ -->
+
+  <svg viewbox="0 0 800 500" class="svg">
+    <defs>
+      <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1.6">
+        <stop offset="0%" style="stop-color: rgb(237,168,10);stop-opacity:1" />
+        <stop offset="100%" style="stop-color : #fe5858;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <path id="curve" fill="	url(#grad1)" d="M 0 350 Q 500 500 800 100 L 800 0 L 0 0 L 0 300 ">
+    </path>
+  </svg>
+</div>
+
+
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  <a class="navbar-brand" href="#">PORTFOLIO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item hoverlien">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item hoverlien">
+        <a class="nav-link" href="#">Education</a>
+      </li>
+      <li class="nav-item hoverlien">
+        <a class="nav-link" href="#">Skkils</a>
+      </li>  
+      <li class="nav-item hoverlien">
+        <a class="nav-link" href="#">Experience</a>
+      </li>  
+      <li class="nav-item hoverlien">
+        <a class="nav-link" href="#">Contact</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+
+<header class="container head" id="header">
+  <div class="row">
+    <div class="col-md-6 ">
+      <h1>Amal AKLI</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, veritatis nulla? Ad id, doloremque at ipsa iusto optio</p>
+      <section class="section ">
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+          <defs>
+            <filter id="filter-goo-3">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+              <feComposite in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+
+        <button id="component-3" class="button button--2 button--3 hire" style="filter: url('#filter-goo-3')">
+          Hire Me
+          <span class="button__bg"></span>
+        </button>
+      </section>
+      
+      <div class="row down ">
+        <div class="col-md-6 text-center"><a href="#about"><i class="fas fa-angle-down fa-2x"></i></a></div>
+      </div>
+  </div>
+    <div class="col-md-6 picture">
+      <img class="image" src="pictures/P7131615.JPG"></img>
+    </div>
+  </div>
+  </div>
+</header>
+
+
+
+<section class="cotainer"  id="about">
+
+    <div class="row about" >
+      <div class="col-md-5 ProfilePic d-flex h-100 ">
+        <span id="textCurve">
+          <svg viewBox="-39 -39 578 578" >
+            <path d="
+            M 250, 250
+            m -250, 0
+            a 250,250 0 0,1 500,0
+            a 250,250 0 0,1 -500,0
+            " id="curved-text-4 Worlds" fill="none"></path>
+        
+            <text width="500" alignment-baseline="baseline" textLength="1571" >
+              <textPath  xlink:href="#curved-text-4 Worlds" startOffset="00%" textLength="1571">
+                • Amal Akli •  Amal Akli •  Amal Akli •  Amal Akli •  Amal Akli 
+              </textPath>
+            </text>
+        </svg>
+        </span>
+        <img src="pictures/P7131615.JPG " >
+      </div>
+      <div class="col-md-7"> 
+        <h1 class="Title">ABOUT</h1>    
+         <p class="p-3">Lorem ipsum  Nobis, aliquam tenetur deserunt accusamus non enim ipsam. Aperiam maiores magnam, perferendis reprehenderit nemo tempora voluptate dolores quasi soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quae quo ducimus voluptatibus. Odio laboriosam pariatur, non voluptatum veritatis perferendis perspiciatis magnam fugiat modi repellendus id error ratione numquam ullam.</p> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="container education">
+    <h1 class="Title text-center mt-5" >EDUCATION</h1>
+    <p class="text-center m-2 mb-2" style="font-size: 17px ;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
+    <div class="row eduSection mt-5 ">
+      <div class="col-lg-6 bac">
+        <span>
+          <i class="fas fa-award fa-3x p-2"></i>
+          <h1 >
+             Baccalureat</h1>
+          <h2>
+              2016-2017
+          </h2>
+        </span>
+       
+      <span class="d-flex justify-content-center pl-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis adipisci excepturi porro eum est dolore assumenda dicta 
+        </p>
+      </span>
+      </div>
+      <div class="col-lg-6 fac">
+        <span>
+          <i class="fas fa-user-graduate fa-3x p-2"></i>
+          <h1>
+             University
+          </h1>
+          <h2>
+              2017-2022
+          </h2>
+        </span>
+        <span class="d-flex justify-content-center pl-4">
+          <p>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere minima quas rerum laudantium facilis sed ipsum exercitationem. 
+          </p>
+        </span>
+        
+      </div>
+
+    </div>
+</section>
+
+
+<section class="container-fluid skkils p-5">
+  <h1 class="Title text-center" >SKILLS</h1>
+  <p class="text-center " style="font-size: 17px ;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
+  <div class="row progressbar mt-4 p-5 justify-content-center ">
+
+
+    <div class="col-md-5">
+      <span>
+        <h3>html and css </h4>
+        <div class="progress m-4">
+          <div class="progress-bar" style="width: 90%;" ><abbr></abbr></div>
+        </div>
+      </span>
+
+      <span>
+        <h3>html and css </h4>
+        <div class="progress m-4">
+          <div class="progress-bar" style="width: 60%;" ><abbr></abbr></div>
+        </div>
+      </span>
+
+      <span>
+        <h3>html and css </h4>
+        <div class="progress m-4">
+          <div class="progress-bar" style="width: 50%;"><abbr></abbr></div>
+        </div>
+      </span>
+    </div>
+
+
+
+    <div class="col-md-5">
+      <span>
+        <h3>html and css </h4>
+        <div class="progress m-4">
+          <div class="progress-bar" style="width: 50%;" ><abbr></abbr></div>
+        </div>
+      </span>
+     
+      <span>
+        <h3>html and css </h3>
+        <div class="progress m-4">
+          <div class="progress-bar" style="width: 70%; " ><abbr></abbr></div>
+        </div>
+      </span>
+
+      <span>
+        <h3>html and css </h3>
+        <div class="progress m-4">
+          <div class="progress-bar" style="width: 80%;" ><abbr></abbr></div>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-fluid carr-image">
+  <div class="shape_sec">
+    <div class="container-fluid shape"></div>
+      <div class="row justify-content-center mt-5 ">
+        <h1>SOME QUESTIONS AND TEXT </h1>
+      </div>
+      <div id="carouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-3 pb-5"">
+                 <p>lorem ipsum (imagine longer text)</p>
+            </div>
+            <div class="carousel-item text-center p-3 pb-5">
+                <p>lorem ipsum (imagine longer text)</p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <div class="row justify-content-center p-5 ">  <button>button </button></div>
+    </div>
+</section>
+
+<section class="container-fluid experience p-5">
+  <div class="row justify-content-center mt-5 ">
+    <h1>EXPERIENCE </h1>
+  </div>
+  <p class="text-center " style="font-size: 17px ;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
+  <div class="row pt-5">
+    <div class="col-md-4 col-sm-6 p-4">
+      <img src="pictures/amal.jpg">
+      <div class="experience-col p-5">
+        <span><i></i>lieu</span>
+        <span><i></i>date</span>
+        <h3>titre experince</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 p-4">
+      <img src="pictures/amal.jpg">
+      <div class="experience-col p-5">
+        <span><i></i>lieu</span>
+        <span><i></i>date</span>
+        <h3>titre experince</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 p-4">
+      <img src="pictures/amal.jpg">
+      <div class="experience-col p-5">
+        <span><i></i>lieu</span>
+        <span><i></i>date</span>
+        <h3>titre experince</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</p>
+      </div>
+    </div>
+      
+
+   
+
+  </div>
+
+</section>
+
+<footer class="container-fluid p-2 mt-5">
+  <div class="row icons middle">
+  
+    <a class="btn" href="#" >
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a class="btn" href="#" >
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="btn" href="#" >
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a class="btn" href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  
+</div>
+
+</footer>
+
+
+  <div class="FloatBtn">
+    <a href="#header"><i class="fas fa-angle-double-up fa-2x" ></i></a>
+  </div> 
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+<script src="js/js.js" ></script>
+<script>
+  
+
+
+</script>
+
+</html>
