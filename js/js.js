@@ -163,7 +163,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
 	  if (scroll > 100) {
-	    $(".navbar-expand-md").css("background" , "linear-gradient(315deg, #fe5858 0%, #ee9617 70%)");
+	    $(".navbar-expand-md").css("background" , "var(--main-color)");
     }
     
 	  else{
@@ -171,3 +171,20 @@ $(document).ready(function(){
 	  }
   })
 })
+
+/**************************************************************************************** */
+function myFunction(id) {
+  var btnText = document.getElementById(id);
+  var dots = document.getElementById("dots"+id);
+  var moreText = document.getElementById("more"+id);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "<i class='fas fa-angle-right'></i>Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}

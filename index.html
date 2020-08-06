@@ -35,12 +35,10 @@
 <!-----------------------------------header container ------------------------------------------------->
 
 <div class="svg-container" id="svg-container"> 
-  <!-- I crated SVG with: https://codepen.io/anthonydugois/pen/mewdyZ -->
-
   <svg viewbox="0 0 800 500" class="svg">
     <defs>
-      <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1.6">
-        <stop offset="0%" style="stop-color: rgb(237,168,10);stop-opacity:1" />
+      <linearGradient id="grad1" x1="0" y1="0" x2s="1" y2="1">
+        <stop offset="0%" style="stop-color: #ee9617;stop-opacity:1" />
         <stop offset="100%" style="stop-color : #fe5858;stop-opacity:1" />
       </linearGradient>
     </defs>
@@ -52,7 +50,7 @@
 
 
 <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-  <a class="navbar-brand" href="#">PORTFOLIO</a>
+  <a class="navbar-brand" href="#">ANY LOGO</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -65,7 +63,7 @@
         <a class="nav-link" href="#">Education</a>
       </li>
       <li class="nav-item hoverlien">
-        <a class="nav-link" href="#">Skkils</a>
+        <a class="nav-link" href="#">Skills</a>
       </li>  
       <li class="nav-item hoverlien">
         <a class="nav-link" href="#">Experience</a>
@@ -82,28 +80,26 @@
     <div class="col-md-6 ">
       <h1>Amal AKLI</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, veritatis nulla? Ad id, doloremque at ipsa iusto optio</p>
-      <section class="section ">
-
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
-          <defs>
-            <filter id="filter-goo-3">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-              <feComposite in="SourceGraphic" in2="goo" />
-            </filter>
-          </defs>
-        </svg>
-
-        <button id="component-3" class="button button--2 button--3 hire" style="filter: url('#filter-goo-3')">
-          Hire Me
-          <span class="button__bg"></span>
-        </button>
-      </section>
-      
-      <div class="row down ">
-        <div class="col-md-6 text-center"><a href="#about"><i class="fas fa-angle-down fa-2x"></i></a></div>
+     <!--
+     <div class="mt-5 pt-4">
+       <a id="button-header" href="#"> 
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         Download CV 
+       </a>
       </div>
-  </div>
+      --> 
+      <div class="row mt-5 ml-1 pt-2">
+        <button class="btnHead" >
+          Download CV 
+        </button>
+      </div>
+      <div class="row down ">
+        <div class="col-md-8 "><a href="#about"><i class="fas fa-angle-down fa-2x"></i></a></div>
+      </div>
+    </div>
     <div class="col-md-6 picture">
       <img class="image" src="pictures/P7131615.JPG"></img>
     </div>
@@ -113,7 +109,7 @@
 
 
 
-<section class="cotainer"  id="about">
+<section class="cotainer mb-5"  id="about">
 
     <div class="row about" >
       <div class="col-md-5 ProfilePic d-flex h-100 ">
@@ -145,53 +141,104 @@
 
 
 
-<section class="container education">
-    <h1 class="Title text-center mt-5" >EDUCATION</h1>
-    <p class="text-center m-2 mb-2" style="font-size: 17px ;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
-    <div class="row eduSection mt-5 ">
-      <div class="col-lg-6 bac">
-        <span>
-          <i class="fas fa-award fa-3x p-2"></i>
-          <h1 >
-             Baccalureat</h1>
-          <h2>
-              2016-2017
-          </h2>
-        </span>
-       
-      <span class="d-flex justify-content-center pl-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis adipisci excepturi porro eum est dolore assumenda dicta 
-        </p>
-      </span>
-      </div>
-      <div class="col-lg-6 fac">
-        <span>
-          <i class="fas fa-user-graduate fa-3x p-2"></i>
-          <h1>
-             University
-          </h1>
-          <h2>
-              2017-2022
-          </h2>
-        </span>
-        <span class="d-flex justify-content-center pl-4">
-          <p>
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere minima quas rerum laudantium facilis sed ipsum exercitationem. 
-          </p>
-        </span>
-        
-      </div>
 
+
+
+
+
+
+<section class="container-fluid experience p-5">
+  <div class="row justify-content-center mt-2 ">
+    <h1>EXPERIENCE </h1>
+  </div>
+  <p class="text-center " style="font-size: 17px ;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
+  <div class="row pt-5">
+
+    <div class="col-lg-4 col-md-6 p-4"> 
+      <div class="experience-col p-4">
+        <div class="d-flex justify-content-center"><img src="pictures/cse_white.png"></div>
+        <h3 class="p-2">titre experience</h3>
+        <div><i class="fas fa-map-marker-alt p-3"></i>tizi ouzou , techno</div>
+        <div><i class="fas fa-calendar-alt p-3 "></i>11-15 juin 2018</div>
+        <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem <span id="dotsbtn1" class="dots">...</span><span id="morebtn1" class="more">eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</span></p>
+        <button onclick="myFunction('btn1')" id="btn1" class="myBtn"> <i class="fas fa-angle-right"></i>Read more</button>
+      </div>
     </div>
+    <div class="col-lg-4 col-md-6 p-4"> 
+      <div class="experience-col p-4">
+        <div class="d-flex justify-content-center"><img src="pictures/cse_white.png"></div>
+        <h3 class="p-2">titre experience</h3>
+        <div><i class="fas fa-map-marker-alt p-3"></i>tizi ouzou , techno</div>
+        <div><i class="fas fa-calendar-alt p-3 "></i>11-15 juin 2018</div>
+        <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem <span id="dotsbtn2" class="dots">...</span><span id="morebtn2" class="more">eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</span></p>
+        <button onclick="myFunction('btn2')" id="btn2" class="myBtn"> <i class="fas fa-angle-right"></i>Read more</button>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 p-4"> 
+      <div class="experience-col p-4">
+        <div class="d-flex justify-content-center"><img src="pictures/cse_white.png"></div>
+        <h3 class="p-2">titre experience</h3>
+        <div><i class="fas fa-map-marker-alt p-3"></i>tizi ouzou , techno</div>
+        <div><i class="fas fa-calendar-alt p-3 "></i>11-15 juin 2018</div>
+        <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem <span id="dotsbtn3" class="dots">...</span><span id="morebtn3" class="more">eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</span></p>
+        <button onclick="myFunction('btn3')" id="btn3" class="myBtn"> <i class="fas fa-angle-right"></i>Read more</button>
+      </div>
+    </div>
+
+   
+  </div>
+</section>
+<div class="project-header"></div>
+<section class="container-fluid  p-2 projects ">
+  <div class="row justify-content-center mt-4"><h1>PROJECTS</h1></div>
+  <div class=" m-5 bloc pt-3">
+  <div class="row p-5" >
+    <div class="col-lg-4 col-md-8 col-sm-12 d-flex justify-content-center pic pr-4 pl-4">
+      <img src="pictures/smartphone-mockup-apps_23-2148080566.jpg">
+       
+    </div>
+    <div class="col-lg-8 col-md-12 pl-3">
+      <h3>Project Title</h3>
+      <h4 class="mb-3 mt-2">Sous Titre </h4>
+      <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum laborum in impedit dolore officia numquam, sapiente ipsam voluptatum corrupti et accusantium molestiae tempora quo repudiandae aliquam at illum voluptates.</p>
+      <div class="mt-2 link"><a href ="https://bennettfeely.com/clippy/" > <i class=" fas fa-link "></i> View Porject</a></div>
+ 
+    </div>
+  </div>
+  <div class="row p-5 " >
+    <div class="col-lg-4 col-md-8 col-sm-12 d-flex justify-content-center pic  pr-4 pl-4">
+      <img src="pictures/08264e89764417.5dffc2e6ea64d-1000x750.jpg">
+    </div>
+    <div class="col-lg-8 col-md-12 pl-3">
+      <h3>Project Title</h3>
+      <h4 class="mb-4">date : 20 jan 2020 </h4>
+      <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum laborum in impedit dolore officia numquam, sapiente ipsam voluptatum corrupti et accusantium molestiae tempora quo repudiandae aliquam at illum voluptates.</p>
+      <div class="mt-2 link" ><a href ="https://bennettfeely.com/clippy/" >  <i class=" fas fa-link "></i> View Porject</a></div>
+    </div>
+  </div>
+  <div class="row p-5 " >
+    <div class="col-lg-4 col-md-8 col-sm-12 d-flex justify-content-center pic  pr-4 pl-4">
+        <img src="pictures/All-Free-Mockups-Mockup-World.jpg">
+    </div>
+    <div class="col-lg-8 col-md-12  pl-3">
+      <h3>Project Title</h3>
+      <h4 class="mb-4">date : 20 jan 2020 </h4>
+      <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ipsum laborum in impedit dolore officia numquam, sapiente ipsam voluptatum corrupti et accusantium molestiae tempora quo repudiandae aliquam at illum voluptates.</p>
+      <div class="mt-2 link"><a href ="https://bennettfeely.com/clippy/" >  <i class=" fas fa-link "></i> View Porject</a></div>
+    </div>
+  </div>
+</div>
 </section>
 
 
-<section class="container-fluid skkils p-5">
+
+<section class="container-fluid skkils ">
   <h1 class="Title text-center" >SKILLS</h1>
   <p class="text-center " style="font-size: 17px ;">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
-  <div class="row progressbar mt-4 p-5 justify-content-center ">
+  <div class="row progressbar mt-5 p-2 justify-content-center ">
 
 
     <div class="col-md-5">
@@ -248,16 +295,16 @@
 <section class="container-fluid carr-image">
   <div class="shape_sec">
     <div class="container-fluid shape"></div>
-      <div class="row justify-content-center mt-5 ">
-        <h1>SOME QUESTIONS AND TEXT </h1>
-      </div>
+      <h1 class="mt-5 text-center">RECOMMANDATIONS </h1>
       <div id="carouselContent" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active text-center p-3 pb-5"">
-                 <p>lorem ipsum (imagine longer text)</p>
+            <div class="carousel-item active text-center p-5">
+                <h3>Akli Melissa </h3>
+                 <p class="pl-5 pr-5 ml-5 mr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus dolor inventore deserunt ea iure adipisci laboriosam itaque magnam asperiores. Commodi soluta dolores quo labore laboriosam, obcaecati sequi ad id iusto.</p>
             </div>
-            <div class="carousel-item text-center p-3 pb-5">
-                <p>lorem ipsum (imagine longer text)</p>
+            <div class="carousel-item text-center p-5">
+               <h3>Akli Melissa </h3>
+                <p class="pl-5 pr-5  ml-5 mr-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quas asperiores laborum ut molestias iusto. Omnis reiciendis atque eaque delectus harum, error, architecto aut veniam praesentium facere, unde voluptatem doloribus.</p>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
@@ -268,69 +315,191 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-        <div class="row justify-content-center p-5 ">  <button>button </button></div>
+        <div class="row justify-content-center p-5 ">  
+
+          <section class="section ">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+              <defs>
+                <filter id="filter-goo-3">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+            <button id="component-3" class="button button--2 button--3 hire" style="filter: url('#filter-goo-3')">
+              AJOUTER
+              <span class="button__bg"></span>
+            </button>
+          </section>
+
+        </div>
     </div>
 </section>
 
-<section class="container-fluid experience p-5">
-  <div class="row justify-content-center mt-5 ">
-    <h1>EXPERIENCE </h1>
+
+
+
+<section class="container education">
+  <h1 class="Title text-center mt-5" >EDUCATION</h1>
+  <p class="text-center m-2 mb-2" style="font-size: 17px ;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
+  <div class="row eduSection mt-5 ">
+    <div class="col-lg-6 bac">
+      <span>
+        <i class="fas fa-award fa-3x p-2"></i>
+        <h1 >
+           Baccalureat</h1>
+        <h2>
+            2016-2017
+        </h2>
+      </span>
+     
+    <span class="d-flex justify-content-center pl-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita facilis adipisci excepturi porro eum est dolore assumenda dicta 
+      </p>
+    </span>
+    </div>
+    <div class="col-lg-6 fac">
+      <span>
+        <i class="fas fa-user-graduate fa-3x p-2"></i>
+        <h1>
+           University
+        </h1>
+        <h2>
+            2017-2022
+        </h2>
+      </span>
+      <span class="d-flex justify-content-center pl-4">
+        <p>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere minima quas rerum laudantium facilis sed ipsum exercitationem. 
+        </p>
+      </span>
+    </div>
   </div>
+</section>
+
+
+
+<section class="container-fluid p-5 scholarships">
+  <div class="row justify-content-center "><h1>SCHOLARSHIPS & TRAININGS </h1></div>
   <p class="text-center " style="font-size: 17px ;">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
-  <div class="row pt-5">
-    <div class="col-md-4 col-sm-6 p-4">
-      <img src="pictures/amal.jpg">
-      <div class="experience-col p-5">
-        <span><i></i>lieu</span>
-        <span><i></i>date</span>
-        <h3>titre experince</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</p>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 p-4">
-      <img src="pictures/amal.jpg">
-      <div class="experience-col p-5">
-        <span><i></i>lieu</span>
-        <span><i></i>date</span>
-        <h3>titre experince</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</p>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 p-4">
-      <img src="pictures/amal.jpg">
-      <div class="experience-col p-5">
-        <span><i></i>lieu</span>
-        <span><i></i>date</span>
-        <h3>titre experince</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur tempora vero blanditiis exercitationem eligendi quibusdam consequatur necessitatibus nam possimus maxime, optio aspernatur labore nesciunt? Neque accusantium corrupti aspernatur ullam totam.</p>
-      </div>
-    </div>
-      
+    <div class="row p-4">
 
-   
+      <div class="col-lg-4 col-md-6 p-4 " >
+        <div class="item-scholarship p-3 pt-5">
+          <span class="name-school">CSE</span>
+          <div class="d-flex justify-content-center"> <div class="logo-school "><img src="pictures/cse_logo.png"></div></div>
+          <div class="p-2 pt-5 ">
+            <h3 class="text-center">Google Africa developer scolarship</h3>
+            <h5 class="text-center p-1">15 - 20 / 02 / 2020 </h5>
+          </div>
+          <p class="p-3 text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptas ullam illum! Libero, quia quisquam esse nulla </p>
+        </div>
+      </div>
 
+      <div class="col-lg-4 col-md-6 p-4 " >
+        <div class="item-scholarship p-3 pt-5">
+          <span class="name-school">CSE</span>
+          <div class="d-flex justify-content-center"> <div class="logo-school "><img src="pictures/cse_logo.png"></div></div>
+          <div class="p-2 pt-5 ">
+            <h3 class="text-center">AAF summer university 2020</h3>
+            <h5 class="text-center p-1">15 - 20 / 02 / 2020 </h5>
+          </div>
+          <p class="p-3 text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptas ullam illum! Libero, quia quisquam esse nulla </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 p-4 " >
+        <div class="item-scholarship p-3 pt-5">
+          <span class="name-school">CSE</span>
+          <div class="d-flex justify-content-center"> <div class="logo-school "><img src="pictures/cse_logo.png"></div></div>
+          <div class="p-2 pt-5 ">
+            <h3 class="text-center">Data analysis Nanodegree</h3>
+            <h5 class="text-center p-1">15 - 20 / 02 / 2020 </h5>
+          </div>
+          <p class="p-3 text-center ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptas ullam illum! Libero, quia quisquam esse nulla </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="container-fluid pr-5 pl-5 awards">
+    <div class="row justify-content-center mt-2"><h1> AWARDS  </h1></div>
+  
+    
+    </section>
+
+    
+
+<section class="container p-5 certif">
+  <div class="row justify-content-center mt-2"><h1>CERTIFICATES</h1></div>
+  <div class="row timeline m-5 pl-6">
+    <span>akli amel</span>
   </div>
 
-</section>
-
-<footer class="container-fluid p-2 mt-5">
-  <div class="row icons middle">
   
-    <a class="btn" href="#" >
+  </section>
+
+
+  <section class="container-fluid p-5 voluntary">
+    <div class="row justify-content-center mt-2"><h1>VOLUNTARY </h1></div>
+    <p class="text-center mb-5 " style="font-size: 17px ;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nulla. Quas repudiandae ?</p>
+  
+    <div class = "gallery row d-flex justify-content-center">
+      <div class="clipped-border">
+        <img src="pictures/P7131609.JPG" id="clipped">
+      </div>
+      <div class="clipped-border">
+        <img src="pictures/P7131609.JPG" id="clipped">
+      </div>
+        <div class="clipped-border">
+        <img src="pictures/P7131609.JPG" id="clipped">
+        </div>
+        <div class="clipped-border">
+          <img src="pictures/P7131609.JPG" id="clipped">
+          </div>
+    </div>
+
+    <div class="row d-flex justify-content-center gallery2">
+      <div class="clipped-border">
+      <img src="pictures/P7131609.JPG" id="clipped">
+    </div>
+      <div class="clipped-border">
+      <img src="pictures/P7131609.JPG" id="clipped">
+    </div>
+    <div class="clipped-border">
+      <img src="pictures/P7131609.JPG" id="clipped">
+      </div>
+    </div>
+    
+   </section>
+
+<footer class="container-fluid p-3 ">
+  <div class="row justify-content-center"><h1>CONTACT </h1></div>
+  <p class="text-center">Feel free to contact me ! </p>
+  <div class="row pt-5 ml-3 d-flex justify-content-center">
+  
+    <a class="btn" href="https://www.linkedin.com/in/amal-akli-677b9b151/" >
       <i class="fab fa-linkedin"></i>
     </a>
-    <a class="btn" href="#" >
+    <a class="btn" href="https://github.com/Amal-AK" >
       <i class="fab fa-github"></i>
     </a>
-    <a class="btn" href="#" >
+    <a class="btn" href="https://www.instagram.com/amel_akli/?hl=fr" >
       <i class="fab fa-instagram"></i>
     </a>
-    <a class="btn" href="#">
+    <a class="btn" href="https://web.facebook.com/Akli.amal">
       <i class="fab fa-facebook"></i>
     </a>
   
 </div>
+
 
 </footer>
 
