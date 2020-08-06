@@ -188,3 +188,18 @@ function myFunction(id) {
     moreText.style.display = "inline";
   }
 }
+
+
+/*************************************************** */
+function display (id)  {
+  var elem = document.getElementById(id);
+  
+  if (elem.style.display === "none") {
+    elem.style.display = "inline";
+ 
+  } else {
+    elem.style.display = "none";
+
+  }
+
+}

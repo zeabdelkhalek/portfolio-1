@@ -70,7 +70,7 @@ h2, h3{
 #loader-bg {
     position : fixed ; 
     z-index : 999999 ; 
-    background: linear-gradient(to bottom , #edb611, #e87500);
+    background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%);
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -490,22 +490,6 @@ h2, h3{
   height: 1px; }
 
 
- .button__bg, .button--2 {
-  border: none;
-  display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.85em;
-  font-weight: 700;
-  text-decoration: none;
-  user-select: none;
-  letter-spacing: 0.1em;
-  color: white ; 
-  padding: 23px 55px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
- }
-
-
   .button__bg:hover, .button--2:hover{
     background-color: var(--triadic);
     color: #fff; }
@@ -518,11 +502,23 @@ h2, h3{
 
 .button--2 {
   margin-top: 10% !important;
-  outline: 90px solid transparent !important;
   animation: float 3s infinite ; 
-  background: var(--main-color) ; 
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+  background: var(--main-color);
+  opacity : 0.8 ; 
+   border: none;
+  font-family: 'Lato R' ; 
+  font-size: 0.85em;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  letter-spacing: 0.1em;
+  color: white;
+  padding: 21px 45px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  
 }
 
 
@@ -711,7 +707,7 @@ h2, h3{
   font-size: 40px;
   margin-top: 0;
   text-align: center;
-  margin-bottom: 10px ;
+  margin-bottom: 20px ;
 }
 
 .about {
@@ -1005,7 +1001,7 @@ overflow: hidden;
 
 
 .shape {
-  height: 120px;
+  height: 150px;
   clip-path:polygon(0% 0%, 100% 0, 100% 39%, 50% 100%, 0 35%) ;
   background-color: #f5f5f5;
   margin: 0;
@@ -1016,13 +1012,13 @@ overflow: hidden;
 .shape_sec {
   height: 100% ; 
   width: 100%;
-  background : rgba(0,0,0,0.65) ; 
+  background : rgba(0,0,0,0.6) ; 
   margin: none ;
 }
 
 .carr-image {
   object-fit:cover ; 
-  background-image: url("../pictures/P7131609.JPG");
+  background-image: url("../pictures/bg.jpg");
   background-size: cover;
   object-fit : cover; 
   background-repeat: no-repeat; 
@@ -1030,34 +1026,76 @@ overflow: hidden;
   padding: 0px;
   color : white ; 
 }
+.carousel-inner {
+  margin : 0% 15% ; 
+  width : 70% ; 
+  float : none ; 
 
-.carousel-item h3 {
-  font-family: 'Lota R';
-  font-size: 20px;
 }
-.carousel-item p {
-  font-family: 'Lota R';
+.carousel-item h2 {
+  
+  margin-top: 20px;
   font-size: 18px;
+  font-family: 'Lato R';
 }
-.carr-image h1 {
+.carr-title {
+  animation: effect linear 1500ms infinite;
+  font-size: 40px ;
   color : white ; 
 }
 
-.carr-image button {
-  padding : 15px 55px ; 
-  background: var(--main-color);
-  border: none;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.85em;
-  font-weight: 700;
-  text-decoration: none;
-  user-select: none;
-  letter-spacing: 0.1em;
-  color: white;
-  padding: 23px 55px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+
+
+@keyframes effect {
+  0% {
+    text-shadow:-11px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000, 1px -1px 0 #000, -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000, -1px 1px 0 #000 ;
+
+  }
+  25% {
+    text-shadow:-4px -4px 0 #000, -3px -3px 0 #000, -2px -2px 0 #000, -1px -1px 0 #000, 4px 4px 0 #000, 3px 3px 0 #000, 2px 2px 0 #000, 1px 1px 0 #000 ;
+
+  }
+  50% {
+    text-shadow: -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000, -1px 1px 0 #000, 4px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000, 1px -1px 0 #000;
+
+  }
+  75% {
+    text-shadow:-20px 4px 0 #000, 3px 3px 0 #000, 2px 2px 0 #000, 1px 1px 0 #000, -4px -4px 0 #000, -3px -3px 0 #000, -2px -2px 0 #000, -1px -1px 0 #000 ;
+
+  }
+  100% {
+    text-shadow: 4px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000, 1px -1px 0 #000, -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000, -1px 1px 0 #000;
+
+  }
+ 
 }
+
+
+
+.carousel-control-next-icon {
+  height: 50px ;
+  width: 50px ;
+  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%); 
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.carousel-control-next-icon i {
+  color : white ; 
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+
+
+.carousel-item p {
+  font-size: 17.5px ;
+  padding-top : 20px ; 
+  font-family: 'Lato L';
+}
+
+
 
 footer h1 {color : white ; }
 
@@ -1136,12 +1174,12 @@ font-size: 18px;
 
 .project-header {
   background-color: #ee9617;
-background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
-
+  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
   position: absolute;
   height: 300px;
   width: 100%;
 }
+
 
 .projects  h1 {
   color : white ; 
@@ -1160,6 +1198,7 @@ background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   
 }
+
 
 .pic img {
   width: 90% ;
@@ -1265,7 +1304,8 @@ background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
    margin-bottom: 60px ;
  }
  .name-school {
-   background: linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
+ 
+  
    opacity: 0.8;
    padding : 16px 14px; 
    top : 75px; 
@@ -1293,7 +1333,7 @@ background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
    padding:5px; 
-   background : white  ; 
+   background :rgba(254,88,88, 0.4); 
    width:var(--border-width);
    height:var(--border-height);
    height:290px;
@@ -1339,11 +1379,66 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   z-index:10;
 }
 
-
-.timeline {
-  border-left: 5px solid var(--rose);
-  height: 300px ;
+.certif {
+  padding: 0;
 }
+.list {
+  background: white ;
+  position: relative;
+  margin : 0 5% ; 
+}
+
+
+.list-item {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding : 20px 10px  ; 
+  width: 100%;
+  border-bottom:  1px solid rgba(0,0,0,.125) ; 
+
+}
+
+.list-item h2 {
+
+  font-size: 20px;
+}
+.list-item a {
+
+  display: none;
+}
+.list-item p {
+
+  font-size: 14px;
+}
+
+.list-item i {
+  position: absolute;
+  right: 12%;
+  margin-top: 20px ;
+  float: right !important;
+  font-size: 22px ;
+  color : var(--complementary)
+}
+
+.list-item img {
+  height: 60px;
+  object-fit: contain;
+  width: 80px;
+  margin-right: 30px ; 
+  margin-left: 2%;
+}
+
+.certif-header {
+  background-color: #ee9617;
+  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
+  position: absolute;
+  margin-top: 15% ;
+  height:400px;
+  width: 100%;
+}
+
+
 
 /*****************media queries *****************************************************************/
 @media (max-width: 900px) {
