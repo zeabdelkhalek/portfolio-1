@@ -143,14 +143,15 @@ $(function () {
 
 $(document).ready(function(){
   $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 100) {
-	    $(".navbar-expand-md").css("background" , "var(--main-color)");
+    var scroll = $(window).scrollTop();
+    if ( window.innerWidth > 768 )   {
+	  if (scroll > 100 || window.innerWidth < 768 ) {
+	    $(".navbar.navbar-expand-md.navbar-dark").css("background" , "linear-gradient(315deg,var(--main-color) 20%, #fe5858  74%)");
     }
     
 	  else{
-		  $(".navbar-expand-md").css("background" , "transparent");  	
-	  }
+		  $(".navbar.navbar-expand-md.navbar-dark").css("background" , "transparent");  	
+	  }}
   })
 })
 
