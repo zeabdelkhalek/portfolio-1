@@ -41,14 +41,20 @@
     margin: 0;
     padding: 0;
 }
-/*linear-gradient( 0.9deg,#5e45b5 21.1%,#bc64ec 96.8% )*/
+
 body {
 background: #fff; 
 font-family: "Lato R" ; 
 color :#6f6f6f ; 
 font-size: 16px;
+margin: 0 auto;
+width: 100%;
 }
 
+.container-fluid {
+  margin : 0 ; 
+  padding : 0 ; 
+}
 .main-stop {
   stop-color: var(--analogous);
 }
@@ -66,177 +72,6 @@ h1 {
 h2, h3{
   font-size:22px ;
 }
-/*-------------------------------------------------loader -------------------------------------------------*/
-#loader-bg {
-    position : fixed ; 
-    z-index : 999999 ; 
-    background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%);
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    display: flex;
-   align-items: center;
-   
-}
-
-.loader {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    transform : perspective(500px) rotateX(60deg) ; 
-    opacity: 0;
-
-}
-
-.circle{
-    position: absolute;
-    display: block;
-    border : 5px solid #fff  ;  
-
-    box-shadow : 0 5px 0  #ccc ,
-                inset 0 5px 0 #ccc ; 
-    box-sizing: border-box;
-    border-radius: 50%;
-    animation: animate 2.5s ease-in-out infinite;
-}
-
-.loader span:nth-child(1){
-    top : 0; 
-    left : 0 ;
-    bottom: 0;
-    right: 0;
-    animation-delay: 1.5s;
-
-}
-
-.loader span:nth-child(2){
-    top : 10px; 
-    left : 10px ;
-    bottom: 10px;
-    right: 10px;
-    animation-delay: 1.4s;
-
-}
-.loader span:nth-child(3){
-    top : 20px; 
-    left : 20px ;
-    bottom: 20px;
-    right: 20px;
-    animation-delay: 1.3s;
-
-}
-.loader span:nth-child(4){
-    top : 30px; 
-    left : 30px ;
-    bottom: 30px;
-    right: 30px;
-    animation-delay: 1.2s;
-
-}
-.loader span:nth-child(5){
-    top : 40px; 
-    left : 40px ;
-    bottom: 40px;
-    right: 40px;
-    animation-delay: 1.1s;
-
-}
-.loader span:nth-child(6){
-    top : 50px; 
-    left : 50px ;
-    bottom: 50px;
-    right: 50px;
-    animation-delay: 1s;
-
-}
-.loader span:nth-child(7){
-    top : 60px; 
-    left : 60px ;
-    bottom: 60px;
-    right: 60px;
-    animation-delay: 0.9s;
-
-}
-
-.loader span:nth-child(8){
-    top : 70px; 
-    left : 70px ;
-    bottom: 70px;
-    right: 70px;
-    animation-delay: 0.8s;
-
-}
-.loader span:nth-child(9){
-    top : 80px; 
-    left : 80px ;
-    bottom: 80px;
-    right: 80px;
-    animation-delay: 0.7s;
-
-}
-.loader span:nth-child(10){
-    top : 90px; 
-    left : 90px ;
-    bottom: 90px;
-    right: 90px;
-    animation-delay: 0.6s;
-
-}
-.loader span:nth-child(11){
-    top : 100px; 
-    left : 100px ;
-    bottom: 100px;
-    right: 100px;
-    animation-delay: 0.5s;
-
-}
-.loader span:nth-child(12){
-    top : 110px; 
-    left : 110px ;
-    bottom: 110px;
-    right: 110px;
-    animation-delay: 0.4s;
-
-}
-.loader span:nth-child(13){
-    top : 120px; 
-    left : 120px ;
-    bottom: 120px;
-    right: 120px;
-    animation-delay: 0.3s;
-
-}
-.loader span:nth-child(14){
-    top : 130px; 
-    left : 130px ;
-    bottom: 130px;
-    right: 130px;
-    animation-delay: 0.2s;
-
-}
-.loader span:nth-child(15){
-    top : 140px; 
-    left : 140px ;
-    bottom: 140px;
-    right: 140px;
-    animation-delay: 0.1s;
-
-}
-
-
-@keyframes animate {
-    
-
-    0% , 100% {
-        transform :  translateZ(-100px)
-    }
-    50% {
-        transform : translateZ(100px)
-    }
-}
-
-
 
 /*--------------------------------------------------header----------------------------------------*/
 .svg-container {
@@ -283,7 +118,8 @@ h2, h3{
       width: 100% !important;
       font-family: "Lato R" ; 
       margin : 0px ; 
-      padding: 20px 0px 20px 80px ; 
+      padding: 18px ; 
+      padding-left: 5%;
       background:  transparent;
       
 
@@ -297,8 +133,7 @@ h2, h3{
 
   .navbar ul {
       margin-left: 5%;
-      padding-left: 3% ;
-      border-left: 2px solid khaki;
+      
 
   }
 
@@ -329,24 +164,6 @@ h2, h3{
 
   }
   
-  @media (max-width: 576px) {
-    .navbar-collapse {
-    
-       
-    }
-
-  
-    header h3 {
-        font-size:12px ;
-    }
-    .hoverlien:hover::after {
-        width: 40%;
-  
-    }
-
-  }
- 
-
 
 
 /*-----------------------------------icons ----------------------------------------------------------*/
@@ -429,7 +246,7 @@ h2, h3{
 
 }
 .picture::before{
-    content: "";
+  content: "";
   position: absolute;
   height: 110%;
   width: 85%;
@@ -447,7 +264,7 @@ h2, h3{
   
   }
   .picture::after{
-    content: "";
+  content: "";
   position: absolute;
   height: 110%;
   width: 85%;
@@ -558,120 +375,6 @@ h2, h3{
 
 
       /*------------------------------------section about ---------------------------------------*/
-/*
-#button-header {
-
-  
-  background-color: white;
-  color : var(--rose) ;
-  border : none ;
-  border-radius: 5px;
-  padding : 20px 50px ; 
-  font-size: 17px;
-  letter-spacing: 2px;
-  font-family: "Lato B";
-  text-decoration: none;
-  position: absolute;
-  overflow: hidden;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-
-
-}
-
-#button-header::before {
-  content: '';
-  position: absolute;
-  top : 2px ; 
-  left : 2px ; 
-  bottom: 2px;
-  width: 50%;
-  background: rgba(255,255,255,0.05);
-}
-
-#button-header span:nth-child(1) {
-  position: absolute;
-  top : 0 ; 
-  left : 0 ; 
-  width : 100% ; 
-  height: 3px ;
-  background: linear-gradient(to right , white,var(--rose));
-  animation : animate1 2s linear infinite ; 
-
-}
-
-@keyframes animate1 {
-  0% {
-    transform : translateX(-100%)
-  }
-  100% {
-    transform : translateX(100%)
-  }
-}
-
-#button-header span:nth-child(2) {
-  position: absolute;
-  top : 0 ; 
-  right: 0; 
-  width : 3px  ; 
-  height: 100%;
-  background: linear-gradient(to bottom , white,var(--rose));
-  animation : animate2 2s linear infinite ; 
-  animation-delay: 1s;
-
-}
-
-@keyframes animate2{
-  0% {
-    transform : translateY(-100%)
-  }
-  100% {
-    transform : translateY(100%)
-  }
-}
-
-
-#button-header span:nth-child(3) {
-  position: absolute;
-  bottom : 0 ; 
-  left : 0 ; 
-  width : 100% ; 
-  height: 3px ;
-  background: linear-gradient(to left,white,var(--rose));
-  animation : animate3 2s linear infinite ; 
-
-}
-
-
-@keyframes animate3{
-  0% {
-    transform : translateX(100%)
-  }
-  100% {
-    transform : translateX(-100%)
-  }
-}
-
-#button-header span:nth-child(4) {
-  position: absolute;
-  top : 0 ; 
-  left: 0; 
-  width : 3px  ; 
-  height: 100%;
-  background: linear-gradient(to top ,white,var(--rose));
-  animation : animate4 2s linear infinite ; 
-  animation-delay: 1s;
-
-}
-
-@keyframes animate4{
-  0% {
-    transform : translateY(100%)
-  }
-  100% {
-    transform : translateY(-100%)
-  }
-}*/
-
 
 .btnHead {
   width: 180px;
@@ -759,8 +462,8 @@ header p  {
   height: 280px;
   width: 280px;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  background : var( --main-color)  ; 
-  opacity: 0.1;
+  background : var(--rose) ; 
+  opacity: 0.05;
   transition: .3s ease-in-out;
  
 }
@@ -773,7 +476,7 @@ header p  {
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   background : var( --main-color)  ; 
   transform: translateY(-6px)rotate(-10deg);
-  opacity: 1; 
+  opacity: 0.8; 
 }
 
 .ProfilePic:hover::after {
@@ -1441,56 +1144,64 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
 
 /*****************media queries *****************************************************************/
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+
  
-header h3 {
-    font-size: 20px ;
-}
-header h2 {
-  font-size: 22px ;
-}
-header h1 {
-  margin-top: 0px;
-  font-size: 30px;
-  margin-bottom: 10px ;
-}
-
-
-}
-
-
-@media (max-width: 768px) {
-  .phase {
-    margin : 50px ; 
+  .picture {
+    display: none;
   }
-      
-  header h1 {
-      margin-top: 20px;
-      font-size: 25px;
-  }
-  header h3 {
-      font-size: 15px ;
-  }
-  header h2 {
-    font-size: 18px ;
 }
+
+
+@media (max-width: 500px) {
+
+  .col-btn-head {
+   width: 100%;
+   margin: 0;
+    display: flex ;
+    justify-content: center;
+  }
   
-  .container.head{
-    padding-top: 0px;
-    padding-left: 40px;
+  .col-btn-head button {
+   background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%); 
+   width: 50%;
+   border: none;
   }
-  .navbar.navbar-expand-md.navbar-dark {
-    padding-bottom: 10px;
+
+  .projects h1 {
+    margin-top : -10px ; 
   }
+.p-4 {
+  padding : 1rem !important ; 
+}
+.pt-5 {
+  margin-top: 1.5rem !important;
+}
+.pb-5 {
+  margin-bottom: 1.5rem !important;
+}
+.pr-5 {
+  margin-right: 1.5rem !important;
+}
+.pl-5 {
+  margin-left: 1.5rem !important;
+}
+  .p-5 {
+    padding : 1.5rem !important ; 
+  }
+  .m-5 {
+    margin : 1.5rem !important ; 
+  }
+.gallery2 {
+  transform: translateY(0px);
+}
   .Title {
     margin-top: 40px ;
   }
   .hire {
     display : none ; 
   }
-  .picture {
-    display: none;
-  }
+  
   .picture::before {
     transform: translate(10px ,0px);
   }
