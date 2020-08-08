@@ -49,6 +49,7 @@ color :#6f6f6f ;
 font-size: 16px;
 margin: 0 auto;
 width: 100%;
+overflow-x: hidden;
 }
 
 .container-fluid {
