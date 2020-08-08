@@ -1,271 +1,262 @@
 :root {
   --main-color: #ee9617;
-  --rose : #fe5858 ; 
-  --complementary : rgb(65,23,162); 
-  --analogous : rgb(237,112,10) ;
-  --monochromatic : rgb(212,164,52); 
-  --triadic : rgb(10,237,169); 
-  --secondary :  rgb(10,121,147) ; 
+  --rose: #fe5858;
+  --complementary: rgb(65, 23, 162);
+  --analogous: rgb(237, 112, 10);
+  --monochromatic: rgb(212, 164, 52);
+  --triadic: rgb(10, 237, 169);
+  --secondary: rgb(10, 121, 147);
   --width: 100%;
   --height: 100%;
   --border-width: 200px;
   --border-height: 200px;
 }
 
-
-
-@font-face  {
-    font-family: "Montserrat";
-    src: url("../font/Montserrat-Regular.ttf");
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-Regular.ttf");
 }
 
-@font-face  {
-    font-family: "Montserrat bold";
-    src: url("../font/Montserrat-Bold.ttf");
+@font-face {
+  font-family: "Montserrat bold";
+  src: url("../font/Montserrat-Bold.ttf");
 }
-@font-face  {
+@font-face {
   font-family: "Lato R";
   src: url("../font/Lato-Regular.ttf");
 }
-@font-face  {
+@font-face {
   font-family: "Lato B";
   src: url("../font/Lato-Bold.ttf");
 }
 
-@font-face  {
+@font-face {
   font-family: "Lato L";
   src: url("../font/Lato-Light.ttf");
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-background: #fff; 
-font-family: "Lato R" ; 
-color :#6f6f6f ; 
-font-size: 16px;
-margin: 0 auto;
-width: 100%;
-overflow-x: hidden;
+  background: #fff;
+  font-family: "Lato R";
+  color: #6f6f6f;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+section {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+[data-aos] {
+  overflow: hidden;
 }
 
 .container-fluid {
-  margin : 0 ; 
-  padding : 0 ; 
+  margin: 0;
+  padding: 0;
 }
 .main-stop {
   stop-color: var(--analogous);
 }
 .alt-stop {
-  stop-color:var(--main-color) ;
+  stop-color: var(--main-color);
 }
-
 
 h1 {
   font-weight: bold;
   font-family: "Lato B";
-  color : #313131; 
+  color: #313131;
 }
 
-h2, h3{
-  font-size:22px ;
+h2,
+h3 {
+  font-size: 22px;
 }
 
 /*--------------------------------------------------header----------------------------------------*/
 
 .svg-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-  }
-   
-  
-  svg path {
-    transition: .1s;
-  }
-  
-
-  h3 {
-    font-weight: 400;
-  }
-   
-  header {
-    color: #fff;
-    padding-top: 5vw;
-    padding-bottom: 10vw;
-   /* text-align: center;*/
-    transition: .1s;
-    padding-left: 10%;
-  }
-
-  
-   @keyframes float {
-       0% {
-           transform: translateY(0) rotateX(0);
-       }
-       50% {
-        transform: translateY(-8px) ;
-    }
-   100% {
-        transform: translateY(0) rotateX(0);
-    }
-   }
-
-  .navbar.navbar-expand-md.navbar-dark  {
-      width: 100% !important;
-      font-family: "Lato R" ; 
-      margin : 0px ; 
-      padding: 18px ; 
-      padding-left: 5%;
-      background:  transparent;
-      
-
-      
-  }
-  
-.navbar-brand {
-    margin-right: 0;
-    font-size: 1.3rem ;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
 
-  .navbar ul {
-      margin-left: 5%;
-      
+svg path {
+  transition: 0.1s;
+}
 
+h3 {
+  font-weight: 400;
+}
+
+header {
+  color: #fff;
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+  /* text-align: center;*/
+  transition: 0.1s;
+  padding-left: 10%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotateX(0);
   }
-
-  .navbar-dark .navbar-nav .nav-link {
-      padding : 0px 20px !important; 
-      cursor: pointer;
-      color : white; 
-      font-family: "Lato R" ;
-      font-weight: 900 ; 
-      line-height: 2;
-      font-size: 16px;
-      position: relative;
-    
+  50% {
+    transform: translateY(-8px);
   }
-
-
-  .hoverlien::after{
-      display: block ; 
-      content: '';
-      width : 0% ; 
-      height: 2px ;
-      background:white ;
-      border-radius: 10px;
-      transition: all 500ms ease;
+  100% {
+    transform: translateY(0) rotateX(0);
   }
-  .hoverlien:hover::after {
-      width: 100%;
+}
 
-  }
-  
+.navbar.navbar-expand-md.navbar-dark {
+  width: 100% !important;
+  font-family: "Lato R";
+  margin: 0px;
+  padding: 18px;
+  padding-left: 5%;
+  background: transparent;
+}
 
+.navbar-brand {
+  margin-right: 0;
+  font-size: 1.3rem;
+}
+
+.navbar ul {
+  margin-left: 5%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  padding: 0px 20px !important;
+  cursor: pointer;
+  color: white;
+  font-family: "Lato R";
+  font-weight: 900;
+  line-height: 2;
+  font-size: 16px;
+  position: relative;
+}
+
+.hoverlien::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
+.hoverlien:hover::after {
+  width: 100%;
+}
 
 /*-----------------------------------icons ----------------------------------------------------------*/
 
-
-
-.btn{
+.btn {
   width: 60px;
-  height: 60px; 
+  height: 60px;
   margin: 10px;
   border-radius: 30%;
-  border : transparent ; 
+  border: transparent;
   box-shadow: 0 5px 15px -5px #00000070;
   overflow: hidden;
   position: relative;
-  background-color: white ; 
-  
+  background-color: white;
 }
 
-.btn i{
+.btn i {
   line-height: 50px;
   font-size: 26px;
-  color : var(--main-color) ; 
+  color: var(--main-color);
   transition: 0.2s linear;
 }
-.btn:hover i{
-  color: white; 
-  transform: scale(1) ;
-
+.btn:hover i {
+  color: white;
+  transform: scale(1);
 }
 .btn:hover {
-    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
-    border: none;
-    transform: scale(1.2);
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+  border: none;
+  transform: scale(1.2);
 }
-.btn::before{
+.btn::before {
   content: "";
   position: absolute;
   width: 120%;
   height: 120%;
-  background:var(--analogous) ;
+  background: var(--analogous);
   transform: rotate(45deg) !important;
   left: -110%;
   top: 90%;
 }
-.btn:hover::before{
+.btn:hover::before {
   animation: aaa 0.8s 1;
   top: -10%;
   left: -10%;
-
 }
 @keyframes aaa {
-  0%{
+  0% {
     left: -110%;
     top: 90%;
-  }50%{
+  }
+  50% {
     left: 10%;
     top: -30%;
-  }100%{
+  }
+  100% {
     top: -10%;
     left: -10%;
   }
 }
 
-
 .picture {
-    display:flex ; 
-    align-items:center;
-    justify-content: flex-end;  
-    justify-content: center;
-    transform: translate(30px , -10px);
-    position: relative;
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: center;
+  transform: translate(30px, -10px);
+  position: relative;
 }
 .image {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    height: 110%;
-    width: 90%;
-    object-fit: cover ; 
-
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  height: 110%;
+  width: 90%;
+  object-fit: cover;
 }
-.picture::before{
+.picture::before {
   content: "";
   position: absolute;
   height: 110%;
   width: 85%;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background-color :#ee9617;
-  background-image : linear-gradient(315deg, var(--main-color) 0%, var(--rose) 74%);
-    margin : 0 5px;
-  transform: translate(0px , 0px)rotate(30deg);
-  }
+  background-color: #ee9617;
+  background-image: linear-gradient(
+    315deg,
+    var(--main-color) 0%,
+    var(--rose) 74%
+  );
+  margin: 0 5px;
+  transform: translate(0px, 0px) rotate(30deg);
+}
 
-  .hire:hover::before{
-    animation: aaa 0.8s 1;
-    top: -10%;
-    left: -10%;
-  
-  }
-  .picture::after{
+.hire:hover::before {
+  animation: aaa 0.8s 1;
+  top: -10%;
+  left: -10%;
+}
+.picture::after {
   content: "";
   position: absolute;
   height: 110%;
@@ -273,61 +264,64 @@ h2, h3{
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: var(--rose);
   opacity: 0.08;
-
-  }
-  
-
-  .picture:hover{
-    animation: rotat2 1s ease;
-  }
-  .picture:hover::after {
-      opacity: 0;
-  }
-
-  .picture:hover::before{
-    animation: rotat 0.8s ease;
 }
 
-@keyframes rotat{
-    0%{ transform: rotate(30deg);}
-    25%{
-        transform: rotate(45deg);
-    }
-    50% {  transform: rotate(15deg);}
-    100%{
-        transform: rotate(30deg);
-    }
+.picture:hover {
+  animation: rotat2 1s ease;
+}
+.picture:hover::after {
+  opacity: 0;
+}
+
+.picture:hover::before {
+  animation: rotat 0.8s ease;
+}
+
+@keyframes rotat {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
 }
 
 /*-----------------------------style button ------------------------------------------------------------*/
-
 
 .svg-filters {
   position: absolute;
   visibility: hidden;
   width: 1px;
-  height: 1px; }
+  height: 1px;
+}
 
+.button__bg:hover,
+.button--2:hover {
+  background-color: var(--triadic);
+  color: #fff;
+}
 
-  .button__bg:hover, .button--2:hover{
-    background-color: var(--triadic);
-    color: #fff; }
-
-
-   .button__bg:focus, .button--2:focus {
-    outline: none;
-    color: #fff; }
-
+.button__bg:focus,
+.button--2:focus {
+  outline: none;
+  color: #fff;
+}
 
 .button--2 {
   margin-top: 10% !important;
-  animation: float 3s infinite ; 
+  animation: float 3s infinite;
   border-radius: 4px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   background: var(--main-color);
-  opacity : 0.8 ; 
-   border: none;
-  font-family: 'Lato R' ; 
+  opacity: 0.8;
+  border: none;
+  font-family: "Lato R";
   font-size: 0.85em;
   font-weight: 700;
   text-decoration: none;
@@ -337,51 +331,51 @@ h2, h3{
   padding: 21px 45px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  
 }
 
+.button--2 .left,
+.button--2 .right {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+  background: var(--main-color);
+  top: 50%;
+  margin-top: -16px;
+  z-index: -2;
+}
 
-  .button--2 .left, .button--2 .right {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    border-radius: 15px;
-    background: var(--main-color); 
-    top: 50%;
-    margin-top: -16px;
-    z-index: -2; }
+.button--2 .left.left,
+.button--2 .right.left {
+  left: 0;
+}
 
+.button--2 .left.right,
+.button--2 .right.right {
+  right: 0;
+}
 
-    .button--2 .left.left, .button--2 .right.left {
-      left: 0; }
+.button--2 .button__bg {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
 
+.button--2:hover:before,
+.button--2:hover span {
+  background-color: var(--triadic);
+}
 
-    .button--2 .left.right, .button--2 .right.right {
-      right: 0; }
-
-
-  .button--2 .button__bg {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; }
-
-
-
-
-.button--2:hover:before, .button--2:hover span {
-      background-color:var(--triadic); }
-
-
-      /*------------------------------------section about ---------------------------------------*/
+/*------------------------------------section about ---------------------------------------*/
 
 .btnHead {
   width: 180px;
   height: 60px;
-  font-family: 'Lato R' ; 
+  font-family: "Lato R";
   font-size: 15px;
   font-weight: 500;
   color: white;
@@ -389,30 +383,29 @@ h2, h3{
   font-size: 15px;
   letter-spacing: 2px;
   background-color: transparent;
-  border : 2px solid white ; 
+  border: 2px solid white;
   border-radius: 5px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-
 }
 
-.btnHead:hover{
-  background-color: #2EE59D;
+.btnHead:hover {
+  background-color: #2ee59d;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
-  border : none ; 
+  border: none;
   transform: translateY(-7px);
 }
-.btnHead:focus{
+.btnHead:focus {
   outline: none;
 }
 .Title {
   font-size: 40px;
   margin-top: 0;
   text-align: center;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
 .about {
@@ -420,41 +413,33 @@ h2, h3{
   margin-top: 1%;
 }
 
- p {
-
+p {
   font-family: "Lato R";
-  font-size :13pt; 
-  line-height: 1.85 ;
+  font-size: 13pt;
+  line-height: 1.85;
   font-weight: 500;
-  margin: auto ; 
-
-
+  margin: auto;
 }
-header p  {
+header p {
   font-size: 13.8pt;
 }
 
 .ProfilePic {
   display: flex;
   justify-content: center;
-  
 }
-
 
 .ProfilePic img {
   height: 280px;
   width: 280px;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  object-fit: cover ; 
+  object-fit: cover;
   overflow: hidden;
   transition: all 1s ease 0s;
   transform: scale(1);
   position: absolute;
-
-  
-  
 }
-.ProfilePic:hover img{
+.ProfilePic:hover img {
   transform: scale(1.05);
 }
 
@@ -464,30 +449,28 @@ header p  {
   height: 280px;
   width: 280px;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  background : var(--rose) ; 
+  background: var(--rose);
   opacity: 0.05;
-  transition: .3s ease-in-out;
- 
+  transition: 0.3s ease-in-out;
 }
 
-.ProfilePic::before{
+.ProfilePic::before {
   content: "";
   position: absolute;
   height: 290px;
   width: 290px;
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  background : var( --main-color)  ; 
-  transform: translateY(-6px)rotate(-10deg);
-  opacity: 0.8; 
+  background: var(--main-color);
+  transform: translateY(-6px) rotate(-10deg);
+  opacity: 0.8;
 }
 
 .ProfilePic:hover::after {
   opacity: 0;
-
 }
 
 .about a {
-  color: var(--analogous) ; 
+  color: var(--analogous);
   font-size: 15px;
   font-family: "Montserrat bold";
   text-align: center;
@@ -502,32 +485,30 @@ header p  {
   height: 250px;
   font-size: 35px;
   font-weight: bold;
-  animation: rotate 7s infinite linear; 
+  animation: rotate 7s infinite linear;
 }
 text {
-  fill :var( --main-color)  ; 
+  fill: var(--main-color);
 }
 
 @keyframes rotate {
-	from {transform : rotate(0deg);}
-	to {transform:rotate(360deg) ;}
-
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-
 
 /************************************************************************************************/
 
-
-
-
-header h1  {
+header h1 {
   margin-top: 0em;
   font-family: "Lato B";
-  font-weight: bold ;
+  font-weight: bold;
   font-size: 60pt;
-  margin-bottom: 0.5em ; 
-  color : white ; 
+  margin-bottom: 0.5em;
+  color: white;
 }
 header h2 {
   margin-top: 20px;
@@ -540,15 +521,9 @@ header h3 {
   font-size: 17pt;
 }
 
-
-
 .fa-angle-down {
-
-animation: down 1s linear infinite;
-margin-left: 80px;
-
-
-
+  animation: down 1s linear infinite;
+  margin-left: 80px;
 }
 .fa-angle-down:hover {
   animation: none;
@@ -559,15 +534,12 @@ margin-left: 80px;
   margin-top: 30px;
 }
 .down a {
-padding-top: 15%;
-text-decoration: none;
-color : white ; 
-padding-bottom: 10%;
-overflow: hidden;
+  padding-top: 15%;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10%;
+  overflow: hidden;
 }
-
-
-
 
 @keyframes down {
   0% {
@@ -601,75 +573,70 @@ overflow: hidden;
 }
 .FloatBtn a {
   text-decoration: none;
-  color : white ; 
+  color: white;
   display: flex;
   align-items: center;
   font-size: 12px;
   justify-content: center;
-  height: 60px ; 
-  width: 60px ; 
+  height: 60px;
+  width: 60px;
   float: right;
   border-radius: 50%;
-  position: fixed ; 
+  position: fixed;
   background-color: var(--main-color);
   bottom: 5%;
   right: 5%;
 
-  box-shadow: 2px 2px 5px var(--analogous) ;
+  box-shadow: 2px 2px 5px var(--analogous);
 }
 
-
-
-
-.eduSection  {
+.eduSection {
   width: 100%;
-  margin : 40px 0px;
+  margin: 40px 0px;
   background-size: cover;
-  border : none ; 
+  border: none;
 }
 
 .eduSection h1 {
-  font-size: 18px ;
-  margin : 10px  ; 
+  font-size: 18px;
+  margin: 10px;
 }
 .education {
-  margin-top : 100px ; 
+  margin-top: 100px;
 }
 
 .eduSection h2 {
-  font-size: 14px ;
-  margin : 0px 10px ; 
+  font-size: 14px;
+  margin: 0px 10px;
   font-family: "Lato L";
 }
 
 .eduSection i {
-  font-size: 40px ;
-  color : var(--complementary) ; 
-
+  font-size: 40px;
+  color: var(--complementary);
 }
-
 
 .eduSection p {
   font-size: 16px;
 }
-.bac , .fac {
+.bac,
+.fac {
   display: flex;
   justify-content: space-around;
   padding: 30px;
 }
-.bac span:nth-child(1) , .fac span:nth-child(1) {
+.bac span:nth-child(1),
+.fac span:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-
 .skkils {
-  margin-top : 0px ; 
+  margin-top: 0px;
   background: #f5f5f5;
   padding-top: 100px;
-  
 }
 
 .skkils h1 {
@@ -677,174 +644,167 @@ overflow: hidden;
 }
 
 .skkils h3 {
-  font-size: 17px ;
-  margin-left: 20px ;
+  font-size: 17px;
+  margin-left: 20px;
 }
 
 .progress {
-  height: 12px ;
+  height: 12px;
 }
 
 .progress-bar {
   background-color: #ee9617;
-  background-image: linear-gradient(315deg, #fe5858 0% , var(--main-color) 64%);
- 
+  background-image: linear-gradient(315deg, #fe5858 0%, var(--main-color) 64%);
+
   animation: bar 4s ease;
 }
 
-
 @keyframes count {
-  from  {
-    left : 5%  }
+  from {
+    left: 5%;
+  }
 }
 
 @keyframes bar {
   from {
-    width : 0 ; 
+    width: 0;
   }
 }
-
 
 .shape {
   height: 150px;
-  clip-path:polygon(0% 0%, 100% 0, 100% 39%, 50% 100%, 0 35%) ;
+  clip-path: polygon(0% 0%, 100% 0, 100% 39%, 50% 100%, 0 35%);
   background-color: #f5f5f5;
   margin: 0;
   position: relative;
-  top : -2px ; 
+  top: -2px;
 }
 
 .shape_sec {
-  height: 100% ; 
+  height: 100%;
   width: 100%;
-  background : rgba(0,0,0,0.6) ; 
-  margin: none ;
+  background: rgba(0, 0, 0, 0.6);
+  margin: none;
 }
 
 .carr-image {
-  object-fit:cover ; 
+  object-fit: cover;
   background-image: url("../pictures/bg.jpg");
   background-size: cover;
-  object-fit : cover; 
-  background-repeat: no-repeat; 
-  margin: none ;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  margin: none;
   padding: 0px;
-  color : white ; 
+  color: white;
 }
 .carousel-inner {
-  margin : 0% 15% ; 
-  width : 70% ; 
-  float : none ; 
-
+  margin: 0% 15%;
+  width: 70%;
+  float: none;
 }
 .carousel-item h2 {
-  
   margin-top: 20px;
   font-size: 18px;
-  font-family: 'Lato R';
+  font-family: "Lato R";
 }
 .carr-title {
   animation: effect linear 1500ms infinite;
-  font-size: 40px ;
-  color : white ; 
+  font-size: 40px;
+  color: white;
 }
-
-
 
 @keyframes effect {
   0% {
-    text-shadow:-11px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000, 1px -1px 0 #000, -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000, -1px 1px 0 #000 ;
-
+    text-shadow: -11px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000,
+      1px -1px 0 #000, -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000,
+      -1px 1px 0 #000;
   }
   25% {
-    text-shadow:-4px -4px 0 #000, -3px -3px 0 #000, -2px -2px 0 #000, -1px -1px 0 #000, 4px 4px 0 #000, 3px 3px 0 #000, 2px 2px 0 #000, 1px 1px 0 #000 ;
-
+    text-shadow: -4px -4px 0 #000, -3px -3px 0 #000, -2px -2px 0 #000,
+      -1px -1px 0 #000, 4px 4px 0 #000, 3px 3px 0 #000, 2px 2px 0 #000,
+      1px 1px 0 #000;
   }
   50% {
-    text-shadow: -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000, -1px 1px 0 #000, 4px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000, 1px -1px 0 #000;
-
+    text-shadow: -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000,
+      -1px 1px 0 #000, 4px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000,
+      1px -1px 0 #000;
   }
   75% {
-    text-shadow:-20px 4px 0 #000, 3px 3px 0 #000, 2px 2px 0 #000, 1px 1px 0 #000, -4px -4px 0 #000, -3px -3px 0 #000, -2px -2px 0 #000, -1px -1px 0 #000 ;
-
+    text-shadow: -20px 4px 0 #000, 3px 3px 0 #000, 2px 2px 0 #000,
+      1px 1px 0 #000, -4px -4px 0 #000, -3px -3px 0 #000, -2px -2px 0 #000,
+      -1px -1px 0 #000;
   }
   100% {
-    text-shadow: 4px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000, 1px -1px 0 #000, -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000, -1px 1px 0 #000;
-
+    text-shadow: 4px -4px 0 #000, 3px -3px 0 #000, 2px -2px 0 #000,
+      1px -1px 0 #000, -4px 4px 0 #000, -3px 3px 0 #000, -2px 2px 0 #000,
+      -1px 1px 0 #000;
   }
- 
 }
 
-
-
 .carousel-control-next-icon {
-  height: 50px ;
-  width: 50px ;
-  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%); 
+  height: 50px;
+  width: 50px;
+  background-image: linear-gradient(315deg, var(--main-color) 0%, #fe5858 74%);
   border-radius: 50%;
   text-align: center;
   align-items: center;
 }
 
 .carousel-control-next-icon i {
-  color : white ; 
+  color: white;
   margin-top: 10px;
   font-size: 30px;
 }
 
-
-
 .carousel-item p {
-  font-size: 17.5px ;
-  padding-top : 20px ; 
-  font-family: 'Lato L';
+  font-size: 17.5px;
+  padding-top: 20px;
+  font-family: "Lato L";
 }
 
-
-
-footer h1 {color : white ; }
+footer h1 {
+  color: white;
+}
 
 .carrousel-title {
   position: relative;
 }
 footer {
-  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%);
-  color : white ; 
+  background-image: linear-gradient(315deg, var(--main-color) 0%, #fe5858 74%);
+  color: white;
 }
 
 .events img {
-  width : 100% ;
+  width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px ;
-
+  border-radius: 10px;
 }
 .experience img {
   width: 150px;
-  height: 150px ; 
-  
+  height: 150px;
 }
 
 .experience {
   background: #f5f5f5;
-  
 }
 .experience-col {
-  background:white;
+  background: white;
 }
 
 .experience i {
-  font-size: 16px ;
-  color : var(--analogous); 
+  font-size: 16px;
+  color: var(--analogous);
 }
 .projects {
   background: #f5f5f5;
 }
-.experience h3 , .projects h3  {
-color : #313131 ; 
-font-family: 'Lato B';
-text-transform: uppercase;
-font-size: 18px;
+.experience h3,
+.projects h3 {
+  color: #313131;
+  font-family: "Lato B";
+  text-transform: uppercase;
+  font-size: 18px;
 }
 .experience p {
   font-size: 16px;
@@ -852,14 +812,13 @@ font-size: 18px;
 
 .myBtn {
   background-color: transparent;
-  color : var(--complementary) ;
-  border : none ; 
-  margin-left: 15px ; 
-  font-family: 'Lato B';
+  color: var(--complementary);
+  border: none;
+  margin-left: 15px;
+  font-family: "Lato B";
   border-top: 4px solid var(--analogous);
-  padding-top: 10px ;
-  font-size: 13px ;
-
+  padding-top: 10px;
+  font-size: 13px;
 }
 
 .myBtn:focus {
@@ -867,55 +826,50 @@ font-size: 18px;
 }
 .myBtn i {
   margin-right: 10px;
-
 }
-.myBtn:hover i  {
+.myBtn:hover i {
   transform: translateX(20px);
   margin-right: 30px;
-
 }
 
-.more {display: none;}
+.more {
+  display: none;
+}
 
 .project-header {
   background-color: #ee9617;
-  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
+  background-image: linear-gradient(315deg, var(--main-color) 0%, #fe5858 74%);
   position: absolute;
   height: 300px;
   width: 100%;
 }
 
-
-.projects  h1 {
-  color : white ; 
-  position: absolute;
+.projects h1 {
+  color: white;
+  /* position: absolute; */
 }
 
 .projects h4 {
-  font-size: 15px ;
-  font-family: 'Lato R';
+  font-size: 15px;
+  font-family: "Lato R";
   margin-top: 5px;
 }
 .bloc {
   position: relative;
-  top: 60px ;
-  background-color: white ; 
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-
-  
+  top: 60px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
- 
-.projet  {
+
+.projet {
   transition: ease;
 }
 
 .pic img {
-  width: 90% ;
-  height: 90%; 
+  width: 90%;
+  height: 90%;
   object-fit: cover;
- border-radius: 5px;
- 
-
+  border-radius: 5px;
 }
 .pic {
   position: relative;
@@ -924,26 +878,25 @@ font-size: 18px;
 .pic::after {
   content: "";
   position: absolute;
-  background:#fe5858;
+  background: #fe5858;
   opacity: 0.1;
   width: 75%;
-  height:90% ; 
-
+  height: 90%;
 }
 
 .pic:hover::after {
   opacity: 0;
 }
 
-.link  a{
- color : var(--rose) ;  
- font-size: 14px;
- font-family: 'Lato B';
- text-decoration: none;
+.link a {
+  color: var(--rose);
+  font-size: 14px;
+  font-family: "Lato B";
+  text-decoration: none;
 }
 
 .link i {
-  color : turquoise ; 
+  color: turquoise;
   margin-right: 10px;
   font-size: 20px;
 }
@@ -951,208 +904,210 @@ font-size: 18px;
 .item-scholarship {
   width: 100%;
   height: 100%;
-  clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%) ; 
-  background-color: #f5f5f5; 
+  clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  background-color: #f5f5f5;
 }
 
 .logo-school {
-  display : flex ;
+  display: flex;
   justify-content: center;
-  align-items: center ;
-  width :  110px ; 
-  height: 110px ;
+  align-items: center;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  background-color: white ;
-
+  background-color: white;
 }
 
 .logo-school::before {
-  content:'' ; 
+  content: "";
   position: absolute;
-  width :  130px ; 
-  height: 130px ;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  background-color:transparent;
-  border-left : 1px dashed var(--rose) ; 
-  border-top : 1px dashed var(--rose) ; 
-  border-bottom : 1px dashed var(--rose) ; 
+  background-color: transparent;
+  border-left: 1px dashed var(--rose);
+  border-top: 1px dashed var(--rose);
+  border-bottom: 1px dashed var(--rose);
   transform: rotate(-25deg);
 }
 .logo-school::after {
-  content:'' ; 
+  content: "";
   position: absolute;
-  width :  146px ; 
-  height: 146px ;
+  width: 146px;
+  height: 146px;
   border-radius: 50%;
-  background-color:transparent;
-  border-left : 2px solid var(--main-color) ; 
-  border-top : 2px solid var(--main-color); 
-  border-bottom : 2px solid var(--main-color); 
+  background-color: transparent;
+  border-left: 2px solid var(--main-color);
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
   transform: rotate(-25deg);
 }
 
-
 .logo-school img {
-  width :  50% ; 
-  height: 50% ; 
+  width: 50%;
+  height: 50%;
   border-radius: 50%;
-
 }
- .item-scholarship h3{
-   font-family: 'Lato B';
-  font-size: 19px ;
+.item-scholarship h3 {
+  font-family: "Lato B";
+  font-size: 19px;
+}
 
- }
+.item-scholarship h5 {
+  font-size: 14px;
+  color: turquoise;
+}
+.item-scholarship p {
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+.name-school {
+  background-image: linear-gradient(315deg, var(--main-color) 0%, #fe5858 74%);
+  opacity: 0.8;
+  padding: 16px 14px;
+  top: 75px;
+  position: absolute;
+  right: 30%;
+  clip-path: circle(50% at 50% 50%);
+  color: white;
+  font-family: "Lato B";
+}
 
- .item-scholarship h5{
-  font-size: 14px ;
-  color : turquoise; 
- } 
- .item-scholarship p {
-   font-size: 16px ;
-   margin-bottom: 60px ;
- }
- .name-school {
-  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
-   opacity: 0.8;
-   padding : 16px 14px; 
-   top : 75px; 
-   position: absolute;
-   right: 30%;
-   clip-path: circle(50% at 50% 50%);
-   color : white ; 
-   font-family: 'Lato B';
+.gallery2 {
+  transform: translateY(-69px);
+}
 
- }
-
-
- .gallery2 {
-   transform: translateY(-69px );
- }
-
-
-.clipped-border img{
-  width:var(--width);
-  height:var(--height);
+.clipped-border img {
+  width: var(--width);
+  height: var(--height);
   object-fit: cover;
 }
 
-.clipped-border{
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-   padding:5px; 
-   background :rgba(254,88,88, 0.4); 
-   width:var(--border-width);
-   height:var(--border-height);
-   height:290px;
-   width:270px;
-   margin : 5px ; 
-   transition:transform 0.2s;
-   position : relative;
-   cursor:pointer;
+.clipped-border {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  padding: 5px;
+  background: rgba(254, 88, 88, 0.4);
+  width: var(--border-width);
+  height: var(--border-height);
+  height: 290px;
+  width: 270px;
+  margin: 5px;
+  transition: transform 0.2s;
+  position: relative;
+  cursor: pointer;
 }
 
 .voluntary {
   background: #f5f5f5;
 }
 
-.clipped-border:before{
-  content:"hello";
-  position:absolute;
-  opacity:0.5;
-  width:350px;
-  height:70px;
-  background:white ;  
-  top:0;
-  left:0;
-  z-index:1;
-  transform:rotate(45deg);
-  transition:transform 0.5s;
+.clipped-border:before {
+  content: "hello";
+  position: absolute;
+  opacity: 0.5;
+  width: 350px;
+  height: 70px;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
 }
 
-.clipped-border:hover:before{
-  transform: translate(-110px,400%) rotate(45deg);
-  transition:transform 0.5s;
+.clipped-border:hover:before {
+  transform: translate(-110px, 400%) rotate(45deg);
+  transition: transform 0.5s;
 }
 
 #clipped {
--webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 0% 75%, 0% 25%);
-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.clipped-border:hover{
-  transform:scale(1.2);
-  transition:transform 0.2s;
-  z-index:10;
+.clipped-border:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+  z-index: 10;
 }
 
 .certif {
   padding: 0;
+  overflow-x: hidden;
 }
 .list {
-  background: white ;
+  background: white;
   position: relative;
-  margin : 0 5% ; 
+  margin: 0 5%;
 }
-
 
 .list-item {
   border-top: none;
   border-left: none;
   border-right: none;
-  padding : 20px 10px  ; 
+  padding: 20px 10px;
   width: 100%;
-  border-bottom:  1px solid rgba(0,0,0,.125) ; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   transition: ease;
-
 }
 
 .list-item h2 {
-
   font-size: 20px;
 }
 .list-item a {
-
   display: none;
 }
 .list-item p {
-
   font-size: 14px;
 }
 
 .list-item i {
   position: absolute;
   right: 12%;
-  margin-top: 20px ;
+  margin-top: 20px;
   float: right !important;
-  font-size: 22px ;
-  color : var(--complementary)
+  font-size: 22px;
+  color: var(--complementary);
 }
 
 .list-item img {
   height: 60px;
   object-fit: contain;
   width: 80px;
-  margin-right: 30px ; 
+  margin-right: 30px;
   margin-left: 2%;
 }
 
 .certif-header {
   background-color: #ee9617;
-  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
+  background-image: linear-gradient(315deg, var(--main-color) 0%, #fe5858 74%);
   position: absolute;
-  margin-top: 15% ;
-  height:400px;
+  margin-top: 15%;
+  height: 400px;
   width: 100%;
 }
 
 .animate {
-font-size: 14pt;
+  font-size: 14pt;
 }
 /* Cursor */
 .typed-cursor {
-  font-weight: bold; 
+  font-weight: bold;
 }
 /*****************media queries *****************************************************************/
 
@@ -1170,28 +1125,25 @@ font-size: 14pt;
     max-width: 750px;
   }
   .col-btn-head {
-    margin-top: 1em ;
+    margin-top: 1em;
   }
 
   .mt-5 {
     margin-top: 1.5em !important;
   }
-
-} 
-
-@media (max-width : 1185px ) {
-  .gallery2 {
-    transform: translateY(0px);
-   }
 }
 
-@media (max-width : 990px ) {
+@media (max-width: 1185px) {
   .gallery2 {
     transform: translateY(0px);
-   }
+  }
 }
 
-
+@media (max-width: 990px) {
+  .gallery2 {
+    transform: translateY(0px);
+  }
+}
 
 @media (max-width: 768px) {
   .hoverlien:hover::after {
@@ -1200,89 +1152,87 @@ font-size: 14pt;
   .gallery2 {
     transform: translateY(0px);
   }
- .picture {
-   display: none;
- }
+  .picture {
+    display: none;
+  }
   .navbar.navbar-expand-md.navbar-dark {
-    background : linear-gradient(315deg,var(--main-color) 20%, #fe5858  74%) ; 
-    border: none ;
+    background: linear-gradient(315deg, var(--main-color) 20%, #fe5858 74%);
+    border: none;
+  }
+  .head {
+    padding: 20px 40px;
+  }
 
-}
-.head {
-  padding : 20px 40px ; 
-}
+  .about {
+    margin-top: 10%;
+  }
 
-.about {
-  margin-top: 10% ;
-}
+  .ProfilePic img {
+    width: 250px;
+    height: 250px;
+  }
+  .ProfilePic::before {
+    width: 260px;
+    height: 260px;
+  }
+  .ProfilePic::after {
+    width: 250px;
+    height: 250px;
+  }
+  .carr-title {
+    font-size: 35px;
+  }
+  .certif-header {
+    margin-top: 35%;
+  }
 
-.ProfilePic img {
-  width: 250px ;
-  height: 250px ;
-}
-.ProfilePic::before {
-  width: 260px;
-  height: 260px ;
-}
-.ProfilePic::after {
-  width: 250px;
-  height: 250px ;
-}
-.carr-title {
-  font-size: 35px ;
-}
-.certif-header {
-  margin-top: 35% ;
-}
+  .projects h1 {
+    /* margin-top: -10px;*/
+  }
+  .p-4 {
+    padding: 1rem !important ;
+  }
+  .pt-5 {
+    margin-top: 1.5rem !important;
+  }
+  .pb-5 {
+    margin-bottom: 1.5rem !important;
+  }
+  .pr-5 {
+    margin-right: 1.5rem !important;
+  }
+  .pl-5 {
+    margin-left: 1.5rem !important;
+  }
+  .p-5 {
+    padding: 1.5rem !important ;
+  }
+  .m-5 {
+    margin: 1.5rem !important ;
+  }
 
- .projects h1 {
-   margin-top : -10px ; 
- }
-.p-4 {
- padding : 1rem !important ; 
-}
-.pt-5 {
- margin-top: 1.5rem !important;
-}
-.pb-5 {
- margin-bottom: 1.5rem !important;
-}
-.pr-5 {
- margin-right: 1.5rem !important;
-}
-.pl-5 {
- margin-left: 1.5rem !important;
-}
- .p-5 {
-   padding : 1.5rem !important ; 
- }
- .m-5 {
-   margin : 1.5rem !important ; 
- }
-
- .Title {
-   margin-top: 40px ;
- }
- svg {
-   display: none;
- }
- .svg-container {
+  .Title {
+    margin-top: 40px;
+  }
+  svg {
+    display: none;
+  }
+  .svg-container {
     height: 460px;
-  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%); ;
- }
- 
- .picture::before {
-   transform: translate(10px ,0px);
- }
- 
+    background-image: linear-gradient(
+      315deg,
+      var(--main-color) 0%,
+      #fe5858 74%
+    );
+  }
 
+  .picture::before {
+    transform: translate(10px, 0px);
+  }
 }
 
-@media (max-width : 400px )  {
+@media (max-width: 400px) {
   .svg-container {
     height: 550px;
-   
-
- }
-
+  }
 }
