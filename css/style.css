@@ -75,12 +75,6 @@ h2, h3{
 
 /*--------------------------------------------------header----------------------------------------*/
 
-.collapse.show {
- 
-
-
-
-}
 .svg-container {
     position: absolute;
     top: 0;
@@ -906,9 +900,13 @@ font-size: 18px;
   top: 60px ;
   background-color: white ; 
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
   
 }
-
+ 
+.projet  {
+  transition: ease;
+}
 
 .pic img {
   width: 90% ;
@@ -1014,8 +1012,7 @@ font-size: 18px;
    margin-bottom: 60px ;
  }
  .name-school {
- 
-  
+  background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858 74%);
    opacity: 0.8;
    padding : 16px 14px; 
    top : 75px; 
@@ -1106,6 +1103,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   padding : 20px 10px  ; 
   width: 100%;
   border-bottom:  1px solid rgba(0,0,0,.125) ; 
+  transition: ease;
 
 }
 
@@ -1148,8 +1146,13 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   width: 100%;
 }
 
-
-
+.animate {
+font-size: 14pt;
+}
+/* Cursor */
+.typed-cursor {
+  font-weight: bold; 
+}
 /*****************media queries *****************************************************************/
 
 @media (min-width: 1200px) {
@@ -1190,7 +1193,9 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
 
 @media (max-width: 768px) {
-
+  .hoverlien:hover::after {
+    width: 20%;
+  }
   .gallery2 {
     transform: translateY(0px);
   }
@@ -1210,11 +1215,6 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   margin-top: 10% ;
 }
 
-#textCurve {
-  top : -20% ; 
-  width: 200px;
-  height: 200px;
-}
 .ProfilePic img {
   width: 250px ;
   height: 250px ;
@@ -1266,7 +1266,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
    display: none;
  }
  .svg-container {
-    height: 450px;
+    height: 460px;
   background-image :linear-gradient(315deg,var(--main-color) 0%, #fe5858  74%); ;
  }
  
@@ -1279,7 +1279,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
 @media (max-width : 400px )  {
   .svg-container {
-    height: 600px;
+    height: 550px;
    
 
  }

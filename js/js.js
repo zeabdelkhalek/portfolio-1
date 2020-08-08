@@ -186,3 +186,17 @@ function display (id)  {
   }
 
 }
+
+/*************************************************************** */
+
+  
+var typed = new Typed('.animate', {
+  strings: [
+    'a web developer ' , 
+    'a graphic designer' , 
+    'a futur data scientist ' , 
+  ] , 
+  typeSpeed :  50 ,  
+  backSpeed :  50 , 
+  loop : true ,  
+});
